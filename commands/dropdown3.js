@@ -38,12 +38,12 @@ module.exports.run = async (client, message, args) => {
         new discord.MessageSelectMenu()
         .setCustomId("roles")
         .setMinValues(0)
-        .setMaxValues(2)
+        .setMaxValues(4)
         .setPlaceholder("Bir rol seç.")
         .addOptions(options)
     )
 
-    return message.channel.send({content: "**Aşağıdaki rollerden kendinize uygun eğitim rolü seçebilirsiniz**\n *Study Buddy rolünü seçerek ders kanalları görebilirsiniz.*", components: [Row] });
+    return message.channel.send({content: "**Aşağıdaki rollerden kendinize uygun eğitim rolü seçebilirsiniz**\n*Study Buddy rolünü seçerek ders kanalları görebilirsiniz.*", components: [Row] });
 
 }
 
