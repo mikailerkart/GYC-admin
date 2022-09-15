@@ -63,7 +63,7 @@ module.exports.run = async (client, message, args) => {
         new discord.MessageSelectMenu()
         .setCustomId("roles")
         .setMinValues(0)
-        .setMaxValues(3)
+        .setMaxValues(1)
         .setPlaceholder("Bir rol seç.")
         .addOptions(options)
     )
