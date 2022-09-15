@@ -68,7 +68,7 @@ module.exports.run = async (client, message, args) => {
         .addOptions(options)
     )
 
-    return message.channel.send({content: "**Aşağıdaki istediğiniz renk rolleri alabilirsiniz.**", components: [Row] });
+    return message.channel.send({content: "**İstediğiniz rengi tablodan seçebilirsin. Unutma sunucuda seçtiğin renk ile temsil edileceksin.**", components: [Row] });
 
 }
 
