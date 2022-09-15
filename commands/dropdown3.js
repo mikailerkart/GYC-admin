@@ -43,7 +43,7 @@ module.exports.run = async (client, message, args) => {
         .addOptions(options)
     )
 
-    return message.channel.send({content: "**Aşağıdaki rollerden kendinize uygun eğitim rolü seçebilirsiniz**\n *Study Buddy rolünü seçerek ders kanalları görebilirsiniz.", components: [Row] });
+    return message.channel.send({content: "**Aşağıdaki rollerden kendinize uygun eğitim rolü seçebilirsiniz**\n *Study Buddy rolünü seçerek ders kanalları görebilirsiniz.*", components: [Row] });
 
 }
 
