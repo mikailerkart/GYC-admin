@@ -48,7 +48,7 @@ client.once("ready", () => {
     const statusOptions = [
         "Görüldü Yiyinler Cemiyeti <3",
         "Creator: Edwins#1025",
-        "GALATASARAY <3"
+        "DAMLA <3"
     ]
 
     let counter = 0;
