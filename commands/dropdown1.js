@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    if(!message.member.roles.cache.has('1019297995235278928')) /*anket kurma yetkili rol */ return message.reply("Anket kurmak için yetkin yok.");
+    if(!message.member.roles.cache.has('986374850195095552')) /*anket kurma yetkili rol */ return message.reply("Anket kurmak için yetkin yok.");
 
     const options = [
         {
