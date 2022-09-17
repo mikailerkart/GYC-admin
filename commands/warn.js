@@ -4,7 +4,7 @@ const discord = require("discord.js")
 module.exports.run = async (client, message, args) => {
 
 
-    if(!message.member.roles.cache.has('1019303833870028921')) return message.reply("Warn atmak için yetkin yok.")
+    if(!message.member.permissions.has('MANAGE_ROLES')) return message.reply("Warn atmak için yetkin yok.")
 
     if(!args[0]) return message.reply("Bir kişiyi etiket atman gerekiyor.");
 
