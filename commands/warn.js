@@ -34,7 +34,7 @@ module.exports.run = async (client, message, args) => {
             **Reason: ** ${reason}`)
         .addField("Warnings", warns[warnUser.id].warns.toString());
 
-    const channel = message.member.guild.channels.cache.get("1019312760347181156") // uyari embed gelecek olan yer
+    const channel = message.member.guild.channels.cache.get("980594788019626004") // uyari embed gelecek olan yer
 
     if(!channel) return;
 
