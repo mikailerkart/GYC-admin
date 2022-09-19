@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     const categoryID = "959944225682763827"; // ticket category
 
-    if(!message.member.roles.cache.has('959948102977069057')) /*add yetkili rol */ return message.reply("ticket'e üye eklemek için yetkin yok.");
+    if(!message.member.roles.cache.has('959459398831448074')) /*add yetkili rol */ return message.reply("ticket'e üye eklemek için yetkin yok.");
 
     if(message.channel.parentId !== categoryID) return message.reply("Bu bir ticket kanalı değil.");
 
