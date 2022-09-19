@@ -2,7 +2,7 @@ const ms = require ("ms");
 
 module.exports.run = async (bot, message, args) => {
 
-    if(!message.member.permissions.has('MANAGE_ROLES')) /*mute yetkili rol */ return message.reply("Mute atmak için yetkin yok.")
+    if(!message.member.roles.cache.has('1021393319210799114')) /*mute yetkili rol */ return message.reply("Mute atmak için yetkin yok.")
 
     if(!args[0]) return message.reply("Bir kişiyi etiket atman gerekiyor.");
 

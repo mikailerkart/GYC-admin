@@ -4,7 +4,7 @@ const discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => {
 
-    if(!message.member.permissions.has('BAN_MEMBERS')) /*ban yetkili rol */ return message.reply("Ban atmak için yetkin yok.")
+    if(!message.member.roles.cache.has('1021393319210799114')) /*ban yetkili rol */ return message.reply("Ban atmak için yetkin yok.")
 
     if(!message.guild.me.permissions.has("BAN_MEMBERS")) return message.reply("Ban atma yetkim yok, bana yetki ver önce.");
 

@@ -3,7 +3,7 @@ const discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => {
 
-    if(!message.member.permissions.has('KICK_MEMBERS')) /*kick yetkili rol */ return message.reply("Kick atmak için yetkin yok.");
+    if(!message.member.roles.cache.has('1021393319210799114')) /*kick yetkili rol */ return message.reply("Kick atmak için yetkin yok.");
 
     if(!message.guild.me.permissions.has("KICK_MEMBERS")) return message.reply("Kick atma yetkim yok, bana yetki ver önce.");
 

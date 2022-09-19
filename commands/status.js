@@ -1,6 +1,6 @@
 module.exports.run = async (client, message, args) => {
 
-    if(!message.member.roles.cache.has('959459398831448074')) /*status yetkili rol */ return message.reply("Status için yetkin yok.");
+    if(!message.member.roles.cache.has('1021393319210799114')) /*status yetkili rol */ return message.reply("Status için yetkin yok.");
 
 
     var statusTxt = args.join(" ");

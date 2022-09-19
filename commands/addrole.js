@@ -2,7 +2,7 @@ const discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
 
-   if(!message.member.permissions.has("MANAGE_ROLES")) return message.reply("Rolleri yönet yetkin yok.")
+   if(!message.member.roles.cache.has("1021393319210799114")) return message.reply("Rolleri yönet yetkin yok.")
 
    let user = message.mentions.users.first() || await message.guild.members.cache.get(args[0]);
    let role = message.mentions.roles.first();

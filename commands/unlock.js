@@ -1,6 +1,6 @@
 module.exports.run = async (bot, message, args) => {
 
-    if(!message.member.permissions.has('BAN_MEMBERS')) /*lock yetkili rol */ return message.reply("Unlock atmak için yetkin yok.")
+    if(!message.member.roles.cache.has('1021393319210799114')) /*lock yetkili rol */ return message.reply("Unlock atmak için yetkin yok.")
 
     await message.channel.permissionOverwrites.set([
 
