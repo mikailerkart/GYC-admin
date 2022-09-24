@@ -174,24 +174,24 @@ client.on('interactionCreate', async interaction => {
  
  });
 
-/*
+
 client.on("guildMemberAdd", async (member) => { // when user join server he gets a role + welcome message
 
-    var role = member.guild.roles.cache.get("1019305166874357810") // unregister role
+    var role = member.guild.roles.cache.get("959947517171224617") // unregister role
 
     if(!role) return;
 
     member.roles.add(role);
 
-    var channel = member.guild.channels.cache.get("1019296866724220971"); // welcome channel
+    var channel = member.guild.channels.cache.get("1001521283827240961"); // welcome channel
 
     if (!channel) return;
 
-    channel.send(`Sunucu'ya hoş geldin, ${member}`);
+    channel.send(`Sunucu'ya hoş geldin, ${member}. <@959947517171224617> sizinle ilgilenecektir.`);
 
 });
 
-*/
+
 
 client.on("messageCreate", async message => {
     if(message.author.bot) return;
