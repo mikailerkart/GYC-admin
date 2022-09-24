@@ -4,7 +4,7 @@ const config = require("../config.json")
 
 module.exports.run = async (client, message, args) => {
 
-    if(!message.member.roles.cache.has('1021393319210799114')) /*üst yönetim yetkili rol */ return message.reply("Owner yetkin yok.");
+    if(!message.member.permissions.has('BAN_MEMBERS')) /*üst yönetim yetkili rol */ return message.reply("Owner yetkin yok.");
 
     const botEmbed = new discord.MessageEmbed()
         .setDescription(`
