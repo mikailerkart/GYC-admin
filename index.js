@@ -177,11 +177,11 @@ client.on('interactionCreate', async interaction => {
 
 client.on("guildMemberAdd", async (member) => { // when user join server he gets a role + welcome message
 
-    var role = member.guild.roles.cache.get("959950993158733904") // unregister role
+   /* var role = member.guild.roles.cache.get("959950993158733904") // unregister role
 
     if(!role) return;
 
-    member.roles.add(role);
+    member.roles.add(role); */
 
     var channel = member.guild.channels.cache.get("1001521283827240961"); // welcome channel
 
